@@ -1,0 +1,107 @@
+// @import './iconfont.css';
+
+.test {
+  // 可以通过 @apply 多个样式封装整体样式
+  @apply mt-4 ml-4;
+
+  padding-top: 4px;
+  color: red;
+}
+
+// 页面高度
+page {
+}
+// 去掉页面滚动条
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+}
+:root,
+page {
+  // 修改按主题色
+  // --wot-color-theme: #37c2bc;
+
+  // 修改按钮背景色
+  // --wot-button-primary-bg-color: green;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  view {
+    box-sizing: border-box;
+  }
+}
+// 复选框文字换行
+.wd-checkbox__txt {
+  white-space: normal !important;
+}
+// 此代码如果不加 页面会被拉的很长
+.wd-tooltip__pos {
+  bottom: 120% !important;
+  left: 50% !important;
+}
+
+// 表单页面单选框文字靠左
+.form_container {
+  .wd-radio.is-large .wd-radio__label {
+    margin-right: auto;
+  }
+}
+
+.wd-calendar__cell.is-disabled .wd-calendar__value {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-picker__placeholder {
+  color: rgb(148, 148, 148) !important;
+}
+
+.wd-select-picker__cell.is-disabled .wd-select-picker__value {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-input__placeholder {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-radio__label {
+  text-align: left;
+}
+.uni-input-input[readonly] {
+  color: rgb(148, 148, 148) !important;
+}
+
+.uni-input-input:disabled {
+  color: rgb(148, 148, 148) !important;
+  -webkit-text-fill-color: rgb(148, 148, 148);
+}
+
+.wd-select-picker__value--placeholder {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-select-picker__cell.is-disabled .wd-cell__value {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-radio .wd-radio__label {
+  font-size: 32rpx !important;
+}
+.wd-cell__error-message {
+  font-size: 13px !important;
+  margin-top: 10rpx !important;
+}
+.wd-cell__value {
+  // color: rgb(148, 148, 148) !important;
+}
+.uni-textarea-textarea:disabled {
+  color: rgb(148, 148, 148) !important;
+}
+.wd-checkbox.is-disabled .wd-checkbox__label{
+  color: rgb(148, 148, 148) !important;
+}
+.wd-radio.is-disabled.is-checked .wd-radio__label{
+  color: rgb(148, 148, 148) !important;
+}
+.wd-radio.is-disabled{
+  color: rgb(148, 148, 148) !important;
+}
